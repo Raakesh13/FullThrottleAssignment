@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+  background-color: whitesmoke;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(78, 72, 72);
+}
+
+
+.Navbar {
+  width: 95%;
+  padding: 40px 0px 10px 0px;
+  text-align: left;
+  border-bottom: 1px solid rgb(211, 203, 203);
+  margin: 0px 40px;
+
+}
+
+.user{
+  padding: 7px;
+  margin: 7px;
+  color: rgb(78, 72, 72);
+  border-bottom: 1px solid rgb(211, 203, 203);
+  border-radius: 3px;
+}
+
+.user:hover{
+  box-shadow: 2px 2px 2px 2px #888888;
+  transform: scale(1,1.15);
+}
+
+.userinfo>span{
+  width: 100%;
+}
+
+.userinfo{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.ActivityLogs{
+  margin: 10px 150px;
+  padding-top: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #888888;
+}
+
+.modal{
+  text-align: center;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(37, 35, 35);
+}
+
+.modal-body{
+  background-color: rgb(193, 209, 219);
+}
+
+
+.datepicker{
+  margin: 0px 15px 15px 15px;
+  text-align: center;
+}
+
+.sessions{
+  padding: 5px;
+  display: inline;
+}
+
+.sessions-head{
+  padding: 5px 2px;
+  display: flex;
+  justify-content: space-around; 
+}
+
+.sessions-head>span{
+  width: 50%;
+  margin: 1px 2px;
+  padding: 5px;
+  background-color: slategray;
+}
+
+.session{
+  padding: 2px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.session>span{
+  width: 50%;
+  margin: 1px 2px;
+  padding: 5px;
+  background-color:rgb(151, 168, 168); 
+}
+
+.in{
+  color: green;
+}
+
+.out{
+  color: red;
+}
