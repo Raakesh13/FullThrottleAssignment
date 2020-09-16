@@ -7,7 +7,7 @@ function App () {
   const [error, setError] = useState(undefined)
 
   useEffect(() => {
-    fetch('https://d3030404-63be-437a-b618-b6a9105dd759.mock.pstmn.io/get') //fetching data from the Mock API
+    fetch(process.env.REACT_APP_URL) //fetching data from the Mock API
       .then(response => response.json()) //returning json format
       .then(result => {
         setUsers(result.members)
@@ -15,7 +15,8 @@ function App () {
       .catch(error => {
         error
           ? setError(error)
-          : setError(                                                       //setting up new error if not data and error is fetched 
+          : setError(
+              //setting up new error if not data and error is fetched
               new Error(
                 'Unable to fetch data. Please check internet connection.'
               )
@@ -30,7 +31,12 @@ function App () {
       ) : (
         <div className='App'>
           <div className='Navbar'>User session detials</div>
+          
           <div className='ActivityLogs'>
+          <div className='ActivityLogs-head'>
+            <span className="id">ID</span> <span>Name</span> <span className="tz">Time zone</span>
+          </div>
+          <div className='ActivityLogs-data'>
             {users.length > 0 ? (
               users.map(user => {
                 return (
@@ -40,8 +46,9 @@ function App () {
                 )
               })
             ) : (
-              <div>No user here.</div>    //If user list is empty render.
+              <div>No user here.</div> //If user list is empty render.
             )}
+            </div>
           </div>
         </div>
       )}

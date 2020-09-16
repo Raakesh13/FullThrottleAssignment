@@ -39,12 +39,40 @@
   justify-content: space-around;
 }
 
+.ActivityLogs-head{
+  padding: 5px 0px;
+  display: flex;
+  justify-content: space-around; 
+}
+
+.ActivityLogs-head>span{
+  width: 100%;
+  padding: 8px 5px;
+  color: white;
+  background-color: slategray;
+}
+
+.id{
+  border-top-left-radius: 5px;
+  border-right: 1px solid white;
+}
+
+.tz{
+  border-top-right-radius: 5px;
+  border-left: 1px solid white;
+}
+
 
 .ActivityLogs{
   margin: 10px 150px;
-  padding-top: 10px;
+  padding-top: 5px;
+}
+
+.ActivityLogs-data{
+  padding-top: 3px;
   background-color: white;
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   box-shadow: 2px 2px 2px 2px #888888;
 }
 
